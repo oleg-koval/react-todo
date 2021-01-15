@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-const InputTodo = ({ addTodoProps }) => {
+const InputTodo = ({ addTodoItemFunction }) => {
   const [state, setState] = useState({ title: '' })
 
   const onChange = (event) => {
-    return setState({
+    setState({
       [event.target.name]: event.target.value,
     })
   }
@@ -12,7 +12,7 @@ const InputTodo = ({ addTodoProps }) => {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    addTodoProps(state.title)
+    addTodoItemFunction(state.title)
     setState({
       title: '',
     })

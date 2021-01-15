@@ -1,3 +1,5 @@
+// TODO: CSS in js emotion lib ,  styled components
+
 const completedStyle = {
   fontStyle: 'italic',
   color: '#d35e0f',
@@ -7,7 +9,6 @@ const completedStyle = {
 
 const TodoItem = ({ todo, handleChangeProps, deleteTodoProps }) => {
   const { title, completed, id } = todo
-
   return (
     <li className="todo-item">
       <input

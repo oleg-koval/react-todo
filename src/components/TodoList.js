@@ -1,7 +1,7 @@
 import TodoItem from './TodoItem'
 
-const TodosList = ({ todos, handleChangeProps, deleteTodoProps }) => {
-  return todos.map((todo) => (
+const TodosList = ({ todos, handleChangeProps, deleteTodoProps }) =>
+  todos.map((todo) => (
     <TodoItem
       key={todo.id}
       todo={todo}
@@ -9,6 +9,5 @@ const TodosList = ({ todos, handleChangeProps, deleteTodoProps }) => {
       deleteTodoProps={deleteTodoProps}
     />
   ))
-}
 
 export default TodosList
