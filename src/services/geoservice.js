@@ -1,0 +1,1 @@
+// Example of different service that geotargeting
